@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendance.LoginController">
+   <children>
+      <AnchorPane prefHeight="509.0" prefWidth="279.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="349.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@log.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="240.0" text="Welcome ">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="79.0" layoutY="303.0" text="To">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="364.0" prefHeight="53.0" prefWidth="307.0" text="Attendance ">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="509.0" prefWidth="396.0" style="-fx-background-color: #66CDAA;">
+         <children>
+            <Label alignment="CENTER" layoutX="165.0" layoutY="153.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login_user" alignment="CENTER" layoutX="73.0" layoutY="206.0" promptText="username">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="login_pass" alignment="CENTER" layoutX="73.0" layoutY="268.0" promptText="password">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="33.0" fitWidth="48.0" layoutX="76.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@l1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="33.0" layoutX="76.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@l2.png" />
+               </image></ImageView>
+            <Button layoutX="162.0" layoutY="336.0" mnemonicParsing="false" onAction="#loginBtn" style="-fx-background-color: #5F9EA0;" text="Login">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="182.0" layoutY="438.0" mnemonicParsing="false" onAction="#sign_btn" style="-fx-background-color: #5F9EA0;" text="Signup" />
+            <Label layoutX="113.0" layoutY="441.0" text="login here ">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lable" layoutX="63.0" layoutY="388.0" prefHeight="17.0" prefWidth="275.0" />
+         </children></AnchorPane>
+   </children>
+</HBox>
